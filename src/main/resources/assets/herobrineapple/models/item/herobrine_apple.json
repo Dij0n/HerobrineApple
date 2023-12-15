@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "herobrineapple:item/herobrine_apple"
+  }
+}
