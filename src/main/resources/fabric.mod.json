@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "herobrine-apple",
+	"version": "${version}",
+	"name": "Herobrine Apple",
+	"description": "Dark evil equivalent to god apple (notch apple) callbthed Herobrine apple that sets you on fire and weeakens your immune system (disease)",
+	"authors": [
+		"DijonMstrd"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/herobrine-apple/heroapple.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.dijon.herapp.HerobrineApple"
+		],
+		"client": [
+			"net.dijon.herapp.HerobrineAppleClient"
+		],
+		"fabric-datagen": [
+			"net.dijon.herapp.HerobrineAppleDataGenerator"
+		]
+	},
+	"mixins": [
+		"herobrine-apple.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.2",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
